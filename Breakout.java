@@ -10,9 +10,6 @@ public class Breakout {
         // Set a constant height to the first argument.
         final int noOfBlocksY = Integer.parseInt(args[1]);
 
-        System.out.println("noOfBlocksX " + noOfBlocksX);
-        System.out.println("noOfBlocksY " + noOfBlocksY);
-
         // Set the GUI window dimensions.
         final int GUIwidth = 800;
         final int GUIheight = 600;
