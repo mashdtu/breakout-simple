@@ -15,7 +15,7 @@ public class Breakout {
 
         } catch (Exception e) {
             // If the arguments are not integers, the program throws an error:
-            System.out.println("Error: Enter two integers as arguments.");
+            System.out.println("Error: Enter two positive integers as arguments.");
             System.exit(0);
         }
 
