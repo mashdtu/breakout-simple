@@ -72,7 +72,7 @@ public class Platform extends Object2D {
         StdDraw.setPenColor(this.getColor());
 
         // Draw a rectangle using the platform position and size.
-        StdDraw.filledRectangle(this.getX(), this.getY(), this.getWidth() / 2, this.getHeight() / 2);
+        StdDraw.filledRectangle(this.x, this.y, this.getWidth() / 2, this.getHeight() / 2);
     }
 
     public int getVelocity() {

@@ -24,27 +24,7 @@ public class Object2D {
     public void draw() {
         // Draw the object at its current position using its stored color.
         StdDraw.setPenColor(this.color);
-        StdDraw.filledRectangle(this.x + 1, this.y + 1, (double) this.width / 2, (double) this.height / 2);
-    }
-
-    public int getY() {
-        // Return the y coordinate of the object.
-        return this.y;
-    }
-
-    public int getX() {
-        // Return the x coordinate of the object.
-        return this.x;
-    }
-
-    public void setX(int x) {
-        // Set the x coordinate of the object.
-        this.x = x;
-    }
-
-    public void setY(int y) {
-        // Set the y coordinate of the object.
-        this.y = y;
+        StdDraw.filledRectangle(this.x, this.y, (double) this.width / 2, (double) this.height / 2);
     }
 
     public int getWidth() {
