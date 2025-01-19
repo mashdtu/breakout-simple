@@ -23,6 +23,12 @@ public class Game {
     private int deadBlocks;
 
     public Game (int guiwidth, int guiheight, int blockFieldWidth, int blockFieldHeight) {
+        // Check that all values are allowed.
+        if (guiwidth < 1 || guiheight < 1 || blockFieldWidth < 1 || blockFieldHeight < 1) {
+            System.out.println("Error: Game dimensions are impossible.");
+            System.exit(0);
+        }
+
         // Set the gameover bool to false.
         this.gameOver = false;
 

@@ -4,11 +4,20 @@ import java.awt.event.KeyEvent;
 
 public class Breakout {
     public static void main(String[] args) {
-        // Set a constant width to the first argument.
-        final int noOfBlocksX = Integer.parseInt(args[0]);
+        int noOfBlocksX = 0, noOfBlocksY = 0;
 
-        // Set a constant height to the first argument.
-        final int noOfBlocksY = Integer.parseInt(args[1]);
+        try {
+            // Set a constant width to the first argument.
+            noOfBlocksX = Integer.parseInt(args[0]);
+
+            // Set a constant height to the first argument.
+            noOfBlocksY = Integer.parseInt(args[1]);
+
+        } catch (Exception e) {
+            // If the arguments are not integers, the program throws an error:
+            System.out.println("Error: Enter two integers as arguments.");
+            System.exit(0);
+        }
 
         // Set the GUI window dimensions.
         final int GUIwidth = 800;
